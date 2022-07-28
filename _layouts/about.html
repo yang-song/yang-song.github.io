@@ -6,7 +6,7 @@ layout: default
       <div class="post">        
         <article>
           {% if page.profile -%}
-          <div class="row">                   
+          <div class="row">        
             <div class="col-sm-3">
               {%- if page.profile.image %}
                 {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
@@ -22,7 +22,7 @@ layout: default
                 class=profile_image_class
                 alt=page.profile.image -%}
               {% endif -%}
-            </div>            
+            </div>                                   
             <div class="col-sm-9">          
               <h1 class="post-title">
                 {% if site.title == "blank" -%}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }} {%- else -%}{{ site.title }}{%- endif %} (宋飏)
@@ -41,7 +41,7 @@ layout: default
                 </div>    
               </div>
               {%- endif %}    
-            </div>          
+            </div>                      
           </div>
           {%- endif %}
           <div class="clearfix">
