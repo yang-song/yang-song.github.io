@@ -1,97 +1,78 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
-
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: PhD Candidate in Computer Science
+      institution: Stanford University, California, United States
+      year: 2022
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Advised by <a href="https://cs.stanford.edu/~ermon">Stefano Ermon</a>.
+    - title: B.S. in Mathematics and Physics
+      institution: Tsinghua University, Beijing, China
+      year: 2016
       description:
-        - Description 1.
-        - Description 2.
+        - <em> Magna cum laude.</em>
+        - Academic Talent Program 2012.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Intern
+      institution: Google Brain, Google LLC, Mountain View, California
+      year: Summer 2020
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Hosted by Ben Poole, Jascha Sohl-Dickstein, Diederik P. Kingma, and Abhishek Kumar.
+    - title: Engineering Intern
+      institution: Advanced Technologies Group, Uber, Toronto, Canada
+      year: Summer 2018
       description:
-        - Description 1.
-        - Description 2.
+        - Hosted by Raquel Urtasun, Chief Scientist of Uber.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Research Intern
+      institution: Microsoft Research, Cambridge, UK.
+      year: Summer 2017
       description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+        - Hosted by Nate Kushman.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2021
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
+        - <a href="https://iclr-conf.medium.com/announcing-iclr-2021-outstanding-paper-awards-9ae0514734ab">ICLR Outstanding Paper Award</a>
+        - NeurIPS Outstanding Reviewer Award
+        - <a href="https://mp.weixin.qq.com/s/FQqzM3MXFlGGo4ct5kxERg">WAIC Rising Star Award</a>
+    - year: 2020
       items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - <a href="https://www.apple.com/education/higher-education/scholars/">Apple PhD Fellowship in AI/ML</a>
+        - <a href="https://www.jpmorgan.com/global/technology/ai/awards/phd-fellowship-award-recipients-2020">J.P. Morgan PhD Fellowship</a>
+        - <a href="https://research.facebook.com/blog/2020/01/announcing-the-recipients-of-the-2020-facebook-fellowship-awards/">Facebook Fellowship, Finalist</a>
+    - year: 2016
       items:
-        - Description 1.
-        - Description 2.
+        - Stanford School of Engineering Fellowship
+        - Excellent Graduate, Tsinghua University
+        - Qualcomm Fellowship
+        - Microsoft-IEEE Fellowship
 
-- title: Other Interests
+- title: Teaching
+  type: time_table
+  contents:
+    - title: Co-Instructor
+      institution: >
+        <a href="https://deepgenerativemodels.github.io/">CS236: Deep Generative Models</a>, Stanford University
+      year: Fall 2021
+      
+    - title: Teaching Assistant
+      institution: >
+        <a href="https://deepgenerativemodels.github.io/2019/">CS236: Deep Generative Models </a>, Stanford University
+      year: Fall 2019
+      
+    - title: Head Teaching Assistant
+      institution: >
+        <a href="https://deepgenerativemodels.github.io/2018/">CS236: Deep Generative Models</a>, Stanford University
+      year: Fall 2018
+
+- title: Professional Services
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <strong>Journal Reviewer:</strong> JMLR, TMLR, IEEE TPAMI, ACM TKDD, Medical Image Analysis, IEEE TIFS, IEEE TNNLS, IEEE TDSC, IET CV.
+    - <strong>Conference Reviewer/ Program Committee:</strong> NeurIPS (2019-2022, 2016), ICML (2019-2022), ICLR (2019-2022), AISTATS (2020-2022), UAI (2020-2022), AAAI (2020).

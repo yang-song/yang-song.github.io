@@ -15,11 +15,17 @@
           {%- else -%}
           <abbr class="badge">{{entry.abbr}}</abbr>
           {%- endif -%}
+          {%- if entry.award -%}
+          <span class="award badge">{{entry.award}}</span>
+          {%- endif -%}
+          {%- if entry.award2 -%}
+          <span class="award badge">{{entry.award2}}</span>
+          {%- endif -%}
         {%- endif -%}
         </div>
 
         <!-- Entry bib key -->
-        <div id="{{entry.key}}" class="col-sm-8">
+        <div id="{{entry.key}}" class="col-sm-9">
         {% if entry.type == "thesis" -%}
           {{reference}}
         {%- else %}
@@ -37,7 +43,15 @@
 
           {%- for author in entry.author_array limit: author_array_limit -%}
             {%- assign author_is_self = false -%}
-            {%- if author.last == site.scholar.last_name %}
+            {%- if author.last contains '*' -%}  
+              {%- assign eq_contrib = true -%}
+              {%- assign last_name = author.last | split: "*" | first -%}              
+            {%- else -%}
+              {%- assign eq_contrib = false -%}
+              {%- assign last_name = author.last -%}
+            {%- endif -%}
+
+            {%- if last_name == site.scholar.last_name %}
               {%- if site.scholar.first_name contains author.first -%}
                 {%- assign author_is_self = true -%}
               {%- endif -%}
@@ -54,30 +68,30 @@
             
             {%- if forloop.length == 1 -%}
               {%- if author_is_self %}
-                <em>{{author.last}}, {{author.first}}</em>
+                <em>{{author.first}} {{last_name}}</em>{%- if eq_contrib -%}*{%- endif -%}
               {%- else -%}
-                {{author.last}}, {{author.first}}
+                {{author.first}} {{author.last}}
               {%- endif -%}
             {%- else -%}
               {%- unless forloop.last -%}
                 {% if author_is_self %}
-                  <em>{{author.last}}, {{author.first}}</em>,&nbsp;
+                  <em>{{author.first}} {{last_name}}</em>{%- if eq_contrib -%}*{%- endif -%},&nbsp;
                 {%- else -%}
                   {% if coauthor_url -%}
-                    <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>,&nbsp;
+                    <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>{% if eq_contrib %}*{% endif %},&nbsp;
                   {%- else -%}
-                    {{author.last}}, {{author.first}},&nbsp;
+                    {{author.first}} {{author.last}},&nbsp;
                   {%- endif -%}
                 {%- endif -%}
               {%- else -%}
                 {%- if author_array_limit == author_array_size %} and {% endif %}
                 {% if author_is_self -%}
-                  <em>{{author.last}}, {{author.first}}</em>
+                  <em>{{author.first}} {{last_name}}</em>{%- if eq_contrib -%}*{%- endif -%}
                 {% else -%}
                   {%- if coauthor_url -%}
-                    <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>
+                    <a href="{{coauthor_url}}">{{author.first}} {{author.last}}{% if eq_contrib %}*{% endif %}</a>
                   {% else -%}
-                    {{author.last}}, {{author.first}}
+                    {{author.first}} {{author.last}}
                   {%- endif -%}
                 {%- endif -%}
               {%- endunless -%}
@@ -93,8 +107,8 @@
             {% endif %}
             {% assign more_authors_show = '' %}
             {%- for author in entry.author_array offset: author_array_limit -%}
-              {% assign more_authors_show = more_authors_show | append: author.last | append: ", " | append: author.first %}
-              {% unless forloop.last %}
+              {% assign more_authors_show = more_authors_show | append: author.first | append: " " | append: author.last %}
+              {% unless forloop.last %}      
                 {% assign more_authors_show = more_authors_show | append: ",&nbsp;" %}
               {% endunless %}
             {%- endfor -%}
@@ -123,26 +137,35 @@
           {% if entry.type == "article" -%}
             {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
           {%- elsif entry.type == "inproceedings" -%}
-            {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
+            {%- capture entrytype -%}<em>{{entry.booktitle}}</em> {%- endcapture -%}
           {%- else -%}
             {%- capture entrytype -%}{%- endcapture -%}
           {%- endif -%}
           {%- if entry.month -%}
             {%- capture entrymonth -%}{{ " " }}{{ entry.month | capitalize }}{%- endcapture -%}
-          {%- endif -%}
-          {%- if entry.year -%}
-            {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
-          {%- endif -%}
+          {%- endif -%}          
           {%- capture periodical -%}{{ entrytype }}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
           <div class="periodical">
             {{ periodical | strip }}
           </div>
         {%- endif %}
         
+          {%- if entry.honor -%}
+          <span class="honor">
+            {{entry.honor}}
+          </span>
+          {%- endif -%}
+    
+          {%- if entry.honor2 -%}
+          <br>
+          <span class="honor">
+            {{entry.honor2}}
+          </span>
+          {%- endif -%}
           <!-- Links/Buttons -->
           <div class="links">
           {%- if entry.abstract %}
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
           {%- endif %}
           {%- if entry.arxiv %}
             <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
@@ -189,6 +212,9 @@
           {%- endif %}
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+          {%- endif %}
+          {%- if entry.media %}
+            <a href="{{ entry.media }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Media</a>
           {%- endif %}
           </div>
 

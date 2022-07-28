@@ -2,24 +2,26 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: |+
+  Incoming Research Scientist at <a href="https://openai.com/">OpenAI</a>. <br><br>
+  Incoming Assistant Professor, <br>
+  Electrical Engineering and Computing + Mathematical Sciences, <br>
+  <a href="https://www.caltech.edu">California Institute of Technology (Caltech)</a>.
 
 profile:
-  align: right
-  image: prof_pic.jpg
+  image: profile.jpg
   image_cicular: false # crops the image to make it circular
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  address: false
 
-news: true  # includes a list of news items
+news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a final year Ph.D. student in Computer Science at [Stanford University](https://www.stanford.edu/). My advisor is [Stefano Ermon](https://cs.stanford.edu/~ermon). 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+**Research:** I am currently interested in the theory and practice of generative models, as well as their interactions with representation learning, weakly supervised learning, AI alignment, inverse problem solving, signal processing, and decision making under uncertainty. I have made important contributions to the mathematical formulation and empirical performance of [score-based generative models](blog/2021/score), allowing flexible model architectures, stable training algorithms, high-quality sample generation, superior model likelihood, and principled controllable synthesis. I like to tackle fundamental problems that are broadly significant, devise methods that are simple yet effective, and aim to build intelligent systems that can widely benefit humanity.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+**Previously:** I was a research intern at [Google Brain](https://research.google/teams/brain/), Uber ATG, and [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/). I obtained my Bachelor's degree in Mathematics and Physics from [Tsinghua University](https://www.tsinghua.edu.cn/), where I worked with [Jun Zhu](http://ml.cs.tsinghua.edu.cn/~jun/index.shtml), [Raquel Urtasun](http://www.cs.toronto.edu/~urtasun/), and [Richard Zemel](http://www.cs.toronto.edu/~zemel/inquiry/home.php).
+
+**Personal Update:** I will be joining the Department of Electrical Engineering and Department of Computing + Mathematical Sciences at California Institute of Technology as an Assistant Professor starting from January 2024. I am looking for self-motivated Ph.D. students to join my group in Fall 2023. If you are interested in working with me, please apply to Caltech CMS, EE, or CNS and mention my name in your applications. If you are interested in a postdoc position, please feel free to reach out to me directly.

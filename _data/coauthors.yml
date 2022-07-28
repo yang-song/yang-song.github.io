@@ -1,3 +1,11 @@
+"Xing":
+  - firstname: ["Lei"]
+    url: https://med.stanford.edu/xinglab.html
+    
+"Tang":
+  - firstname: ["Jian"]
+    url: https://openreview.net/forum?id=PzcvxEMzvQC
+
 "Adams":
   - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
     url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
@@ -17,18 +25,76 @@
   - firstname: ["Carl Philipp Emanuel", "C. P. E."]
     url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
 
-"Przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"Murray":
+  - firstname: ["Iain"]
+    url: https://homepages.inf.ed.ac.uk/imurray2/
 
-"Schrödinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
 
-"Lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"Wu":
+  - firstname: ["Jiajun"]
+    url: https://jiajunwu.com/
+    
+  - firstname: ["Ying", "Ying Nian"]
+    url: http://www.stat.ucla.edu/~ywu/
 
-"Planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"Ermon":
+  - firstname: ["Stefano"]
+    url: https://cs.stanford.edu/~ermon/
+
+"Urtasun":
+  - firstname: ["Raquel"]
+    url: http://www.cs.toronto.edu/~urtasun/
+
+"Liao":
+  - firstname: ["Renjie"]
+    url: http://www.cs.toronto.edu/~rjliao/
+
+"Zemel":
+  - firstname: ["Richard", "Richard R."]
+    url: http://www.cs.toronto.edu/~zemel/inquiry/home.php
+
+"Schwing":
+  - firstname: ["Alexander"]
+    url: http://www.alexander-schwing.de/
+
+"Zhu":
+  - firstname: ["Jun"]
+    url: http://ml.cs.tsinghua.edu.cn/~jun/index.shtml
+  - firstname: ["Jun-Yan"]
+    url: https://www.cs.cmu.edu/~junyanz/
+
+"Nowozin":
+  - firstname: ["Sebastian"]
+    url: http://www.nowozin.net/sebastian/
+
+"Kushman":
+  - firstname: ["Nate"]
+    url: http://www.kushman.org/
+
+"Duvenaud":
+  - firstname: ["David"]
+    url: http://www.cs.toronto.edu/~duvenaud/
+
+"Grover":
+  - firstname: ["Aditya"]
+    url: https://aditya-grover.github.io/
+
+"Sohl-Dickstein":
+  - firstname: ["Jascha"]
+    url: https://scholar.google.com/citations?user=-3zYIjQAAAAJ&hl=en
+
+"Kumar":
+  - firstname: ["Abhishek"]
+    url: https://scholar.google.com/citations?user=6vghMS0AAAAJ&hl=en
+    
+"Kingma":
+  - firstname: ["Durk", "Diederik P."]
+    url: http://dpkingma.com/
+
+"Poole":
+  - firstname: ["Ben"]
+    url: https://scholar.google.com/citations?hl=en&user=i5FMLA4AAAAJ&view_op=list_works
+
+"Hamilton":
+  - firstname: ["William L."]
+    url: https://williamleif.github.io/
