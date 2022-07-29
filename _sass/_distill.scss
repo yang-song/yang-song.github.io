@@ -19,7 +19,7 @@ d-byline a, d-article d-byline a {
 
 d-article {
   border-top-color: var(--global-divider-color) !important;
-  a, p, h1, h2, h3, h4, h5, h6, li, table {
+  a, p, h1, h2, h3, h4, h5, h6, li, table, figcaption {
     color: var(--global-text-color) !important;
   }
   a, h1, h2, hr, table, table th, table td {
@@ -31,7 +31,6 @@ d-article {
   b i {
     display: inline;
   }
-
   d-contents {
     align-self: start;
     grid-column: 1 / 4;
