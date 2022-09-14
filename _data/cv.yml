@@ -73,6 +73,8 @@
 
 - title: Professional Services
   type: list
-  contents:
+  contents:    
+    - <strong>Organizer:</strong> <a href="https://score-based-methods-workshop.github.io/">NeurIPS 2022 Workshop on Score-Based Methods</a>.
+    - <strong>Area Chair:</strong> CVPR (2023).
     - <strong>Journal Reviewer:</strong> JMLR, TMLR, IEEE TPAMI, ACM TKDD, Medical Image Analysis, IEEE TIFS, IEEE TNNLS, IEEE TDSC, IET CV.
     - <strong>Conference Reviewer/ Program Committee:</strong> NeurIPS (2019-2022, 2016), ICML (2019-2022), ICLR (2019-2022), AISTATS (2020-2022), UAI (2020-2022), AAAI (2020).
