@@ -98,3 +98,19 @@
 "Hamilton":
   - firstname: ["William L."]
     url: https://williamleif.github.io/
+
+"Sutskever":
+  - firstname: ["Ilya"]
+    url: https://www.cs.toronto.edu/~ilya/
+
+"Dhariwal":
+  - firstname: ["Prafulla"]
+    url: https://prafulladhariwal.com/
+
+"Chen":
+  - firstname: ["Mark"]
+    url: https://scholar.google.com/citations?user=5fU-QMwAAAAJ&hl=en
+
+"Yang":
+  - firstname: ["Ming-Hsuan"]
+    url: http://faculty.ucmerced.edu/mhyang/

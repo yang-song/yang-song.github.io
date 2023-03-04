@@ -74,8 +74,7 @@
               {%- endif -%}
             {%- else -%}
               {%- unless forloop.last -%}
-                {% if author_is_self %}
-                  <em>{{author.first}} {{last_name}}</em>{%- if eq_contrib -%}*{%- endif -%},&nbsp;
+                {% if author_is_self %}<em>{{author.first}} {{last_name}}</em>{%- if eq_contrib -%}*{%- endif -%},&nbsp;
                 {%- else -%}
                   {% if coauthor_url -%}
                     <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>{% if eq_contrib %}*{% endif %},&nbsp;
@@ -84,7 +83,7 @@
                   {%- endif -%}
                 {%- endif -%}
               {%- else -%}
-                {%- if author_array_limit == author_array_size %} and {% endif %}
+                {%- if author_array_limit == author_array_size %}and {% endif %}
                 {% if author_is_self -%}
                   <em>{{author.first}} {{last_name}}</em>{%- if eq_contrib -%}*{%- endif -%}
                 {% else -%}
@@ -134,10 +133,14 @@
           </div>
 
           <!-- Journal/Book title and date -->
+          {% assign proceedings = "inproceedings,incollection" | split: ','%}
+          {% assign thesis = "thesis,mastersthesis,phdthesis" | split: ','%}
           {% if entry.type == "article" -%}
             {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
-          {%- elsif entry.type == "inproceedings" -%}
-            {%- capture entrytype -%}<em>{{entry.booktitle}}</em> {%- endcapture -%}
+          {%- elsif proceedings contains entry.type -%}
+            {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
+          {%- elsif thesis contains entry.type -%}
+            {%- capture entrytype -%}<em>{{entry.school}}</em> {%- endcapture -%}
           {%- else -%}
             {%- capture entrytype -%}{%- endcapture -%}
           {%- endif -%}

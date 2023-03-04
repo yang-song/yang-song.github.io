@@ -2,6 +2,38 @@
 ---
 
 
+@article{song2023consistency,
+  title={Consistency Models},
+  author={Yang Song and Prafulla Dhariwal and Mark Chen and Ilya Sutskever},
+  journal={arXiv preprint arXiv:2303.01469},
+  abbr={arXiv},
+  abstract={Diffusion models have made significant breakthroughs in image, audio, and video generation, but they depend on an iterative generation process that causes slow sampling speed and caps their potential for real-time applications. To overcome this limitation, we propose consistency models, a new family of generative models that achieve high sample quality without adversarial training. They support fast one-step generation by design, while still allowing for few-step sampling to trade compute for sample quality. They also support zero-shot data editing, like image inpainting, colorization, and super-resolution, without requiring explicit training on these tasks. Consistency models can be trained either as a way to distill pre-trained diffusion models, or as standalone generative models. Through extensive experiments, we demonstrate that they outperform existing distillation techniques for diffusion models in one- and few-step generation. For example, we achieve the new state-of-the-art FID of 3.55 on CIFAR-10 and 6.20 on ImageNet 64x64 for one-step generation. When trained as standalone generative models, consistency models also outperform single-step, non-adversarial generative models on standard benchmarks like CIFAR-10, ImageNet 64x64 and LSUN 256x256.},
+  pdf={https://arxiv.org/abs/2303.01469},
+  year={2023},
+  selected={true}
+}
+
+@article{yang2022diffusion,
+  title={Diffusion models: A comprehensive survey of methods and applications},
+  author={Yang, Ling and Zhang, Zhilong and Song, Yang and Hong, Shenda and Xu, Runsheng and Zhao, Yue and Shao, Yingxia and Zhang, Wentao and Cui, Bin and Yang, Ming-Hsuan},
+  journal={arXiv preprint arXiv:2209.00796},
+  abbr={arXiv},
+  abstract={Diffusion models have emerged as a powerful new family of deep generative models with record-breaking performance in many applications, including image synthesis, video generation, and molecule design. In this survey, we provide an overview of the rapidly expanding body of work on diffusion models, categorizing the research into three key areas: efficient sampling, improved likelihood estimation, and handling data with special structures. We also discuss the potential for combining diffusion models with other generative models for enhanced results. We further review the wide-ranging applications of diffusion models in fields spanning from computer vision, natural language processing, temporal data modeling, to interdisciplinary applications in other scientific disciplines. This survey aims to provide a contextualized, in-depth look at the state of diffusion models, identifying the key areas of focus and pointing to potential areas for further exploration.},
+  code={https://github.com/YangLing0818/Diffusion-Models-Papers-Survey-Taxonomy},
+  pdf={https://arxiv.org/abs/2209.00796},
+  year={2022}
+}
+
+@phdthesis{song2022learning,
+  title={Learning to Generate Data by Estimating Gradients of the Data Distribution},
+  author={Yang Song},
+  year={2022},
+  school={Stanford University},
+  abbr={Thesis},
+  abstract={Generating realistic data with complex patterns, such as images, audio, or molecular structures, often relies on expressive probabilistic models to represent and estimate high- dimensional data distributions. However, even with the power of deep neural networks, building powerful probabilistic models is non-trivial. One major challenge is the need to normalize probability distributions; that is, to ensure the total probability equals one. This necessitates summing over all possible model outputs, which quickly becomes impractical in high-dimensional spaces. In this dissertation, I propose to address this difficulty by working with data distributions through their score functions. These functions, defined as gradients of log data densities, capture information about the corresponding data distributions without requiring normalization, hence can be modeled with highly flexible deep neural networks. This dissertation is organized into three parts. In Part I, I show how to estimate the score function from a finite dataset with expressive deep neural networks and efficient statistical methods. In Part II, I discuss several ways to generate new data samples from models of score functions, building upon ideas from homotopy methods, Markov chain Monte Carlo, diffusion processes, and differential equations. The resulting score-based generative models (also known as diffusion models) achieved record-breaking generation performance for numerous data modalities, challenging the long-standing dominance of generative adversarial networks on many tasks. Importantly, the sampling procedure of score-based generative models can be flexibly controlled for solving inverse problems, demonstrated by their superior performance on multiple tasks in medical image reconstruction. In Part III, I show how to evaluate probability values accurately with models of score functions. Taken together, score-based generative models provide a flexible, powerful and versatile solution for data generation in machine learning and many other disciplines of science and engineering.},
+  pdf={https://searchworks.stanford.edu/view/14310542},
+  selected={true}
+}
 
 @inproceedings{song2022solving,
 	title={Solving Inverse Problems in Medical Imaging with Score-Based Generative Models
