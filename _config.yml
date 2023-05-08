@@ -6,7 +6,7 @@ title: Yang Song # the website title (if blank, full name will be used instead)
 first_name: Yang
 middle_name: 
 last_name: Song
-email: yangsong@caltech.edu
+email: thusongyang@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   The personal website of Yang Song.
 footer_text: >
@@ -65,7 +65,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-email: yangsong@caltech.edu
+email: thusongyang@gmail.com
 github_username: yang-song # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: YSongStanford # your Twitter handle
