@@ -36,6 +36,9 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2023
+      items:
+        - Meritorious Winner of the 2023 WAIC Yunfan Award.
     - year: 2021
       items: 
         - <a href="https://iclr-conf.medium.com/announcing-iclr-2021-outstanding-paper-awards-9ae0514734ab">ICLR Outstanding Paper Award</a>
