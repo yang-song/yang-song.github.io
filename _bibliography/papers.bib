@@ -1,5 +1,15 @@
 ---
 ---
+@article{song2023consistency2,
+  title={Improved Techniques for Training Consistency Models},
+  author={Yang Song and Prafulla Dhariwal},
+  journal={arXiv:2310.14189},
+  abbr={arXiv},
+  abstract={Consistency models are a nascent family of generative models that can sample high quality data in one step without the need for adversarial training. Current consistency models achieve optimal sample quality by distilling from pre-trained diffusion models and employing learned metrics such as LPIPS. However, distillation limits the quality of consistency models to that of the pre-trained diffusion model, and LPIPS causes undesirable bias in evaluation. To tackle these challenges, we present improved techniques for consistency training, where consistency models learn directly from data without distillation. We delve into the theory behind consistency training and identify a previously overlooked flaw, which we address by eliminating Exponential Moving Average from the teacher consistency model. To replace learned metrics like LPIPS, we adopt Pseudo-Huber losses from robust statistics. Additionally, we introduce a lognormal noise schedule for the consistency training objective, and propose to double total discretization steps every set number of training iterations. Combined with better hyperparameter tuning, these modifications enable consistency models to achieve FID scores of 2.51 and 3.25 on CIFAR-10 and ImageNet 64×64 respectively in a single sampling step. These scores mark a 3.5× and 4× improvement compared to prior consistency training approaches. Through two-step sampling, we further reduce FID scores to 2.24 and 2.77 on these two datasets, surpassing those obtained via distillation in both one-step and two-step settings, while narrowing the gap between consistency models and other state-of-the-art generative models.},
+  pdf={https://arxiv.org/abs/2310.14189},
+  year={2023},
+  selected={true}
+}
 
 
 @inproceedings{song2023consistency,
@@ -19,8 +29,8 @@
 @article{yang2022diffusion,
   title={Diffusion Models: A Comprehensive Survey of Methods and Applications},
   author={Yang, Ling and Zhang, Zhilong and Song, Yang and Hong, Shenda and Xu, Runsheng and Zhao, Yue and Zhang, Wentao and Cui, Bin and Yang, Ming-Hsuan},
-  journal={arXiv preprint arXiv:2209.00796},
-  abbr={arXiv},
+  journal={ACM Computing Surveys},
+  abbr={ACM},
   abstract={Diffusion models have emerged as a powerful new family of deep generative models with record-breaking performance in many applications, including image synthesis, video generation, and molecule design. In this survey, we provide an overview of the rapidly expanding body of work on diffusion models, categorizing the research into three key areas: efficient sampling, improved likelihood estimation, and handling data with special structures. We also discuss the potential for combining diffusion models with other generative models for enhanced results. We further review the wide-ranging applications of diffusion models in fields spanning from computer vision, natural language processing, temporal data modeling, to interdisciplinary applications in other scientific disciplines. This survey aims to provide a contextualized, in-depth look at the state of diffusion models, identifying the key areas of focus and pointing to potential areas for further exploration.},
   code={https://github.com/YangLing0818/Diffusion-Models-Papers-Survey-Taxonomy},
   pdf={https://arxiv.org/abs/2209.00796},
@@ -385,7 +395,6 @@
   },
   pdf={https://arxiv.org/abs/2003.00638},
   code={https://github.com/ermongroup/GraphScoreMatching},
-  selected={true},
 }
 
 @inproceedings{song2019unsupervised,
