@@ -1,16 +1,27 @@
 ---
 ---
-@article{song2023consistency2,
+@inproceedings{song2023consistency2,
   title={Improved Techniques for Training Consistency Models},
   author={Yang Song and Prafulla Dhariwal},
-  journal={arXiv:2310.14189},
-  abbr={arXiv},
+  abbr={ICLR},
   abstract={Consistency models are a nascent family of generative models that can sample high quality data in one step without the need for adversarial training. Current consistency models achieve optimal sample quality by distilling from pre-trained diffusion models and employing learned metrics such as LPIPS. However, distillation limits the quality of consistency models to that of the pre-trained diffusion model, and LPIPS causes undesirable bias in evaluation. To tackle these challenges, we present improved techniques for consistency training, where consistency models learn directly from data without distillation. We delve into the theory behind consistency training and identify a previously overlooked flaw, which we address by eliminating Exponential Moving Average from the teacher consistency model. To replace learned metrics like LPIPS, we adopt Pseudo-Huber losses from robust statistics. Additionally, we introduce a lognormal noise schedule for the consistency training objective, and propose to double total discretization steps every set number of training iterations. Combined with better hyperparameter tuning, these modifications enable consistency models to achieve FID scores of 2.51 and 3.25 on CIFAR-10 and ImageNet 64×64 respectively in a single sampling step. These scores mark a 3.5× and 4× improvement compared to prior consistency training approaches. Through two-step sampling, we further reduce FID scores to 2.24 and 2.77 on these two datasets, surpassing those obtained via distillation in both one-step and two-step settings, while narrowing the gap between consistency models and other state-of-the-art generative models.},
   pdf={https://arxiv.org/abs/2310.14189},
-  year={2023},
+  year={2024},
+  award={Oral},
+	honor={Oral Presentation [Top 1.2%]},
+  booktitle={the 12th International Conference on Learning Representations, 2024.},
   selected={true}
 }
 
+@inproceedings{dou2024diffusion,
+  title={Diffusion Posterior Sampling for Linear Inverse Problem Solving: A Filtering Perspective},
+  author={Zehao Dou and Yang Song},
+  abbr={ICLR},
+  abstract={Diffusion models have achieved tremendous success in generating high-dimensional data like images, videos and audio. These models provide powerful data priors that can solve linear inverse problems in zero shot through Bayesian posterior sampling. However, exact posterior sampling for diffusion models is intractable. Current solutions often hinge on approximations that are either computationally expensive or lack strong theoretical guarantees. In this work, we introduce an efficient diffusion sampling algorithm for linear inverse problems that is guaranteed to be asymptotically accurate. We reveal a link between Bayesian posterior sampling and Bayesian filtering in diffusion models, proving the former as a specific instance of the latter. Our method, termed filtering posterior sampling, leverages sequential Monte Carlo methods to solve the corresponding filtering problem. It seamlessly integrates with all Markovian diffusion samplers, requires no model re-training, and guarantees accurate samples from the Bayesian posterior as particle counts rise. Empirical tests demonstrate that our method generates better or comparable results than leading zero-shot diffusion posterior samplers on tasks like image inpainting, super-resolution, and deblurring.},
+  pdf={https://openreview.net/pdf?id=tplXNcHZs1},
+  year={2024},  
+  booktitle={the 12th International Conference on Learning Representations, 2024.}
+}
 
 @inproceedings{song2023consistency,
   title={Consistency Models},
@@ -25,6 +36,7 @@
   poster={ICML2023/consistency.pdf},
   selected={true}
 }
+
 
 @article{yang2022diffusion,
   title={Diffusion Models: A Comprehensive Survey of Methods and Applications},
@@ -228,7 +240,7 @@
 @inproceedings{song2021how,
 	title={How to Train Your Energy-Based Models},
 	author={Yang Song and Diederik P. Kingma},
-	booktitle={To appear in ``Probabilistic Machine Learning: Advanced Topics'' by Kevin P. Murphy.},
+	booktitle={``Probabilistic Machine Learning: Advanced Topics'' by Kevin P. Murphy.},
 	year={2021},
 	abstract={
 	Energy-Based Models (EBMs), also known as non-normalized probabilistic models, specify probability density or mass functions up to an unknown normalizing constant. Unlike most other probabilistic models, EBMs do not place a restriction on the tractability of the normalizing constant, thus are more flexible to parameterize and can model a more expressive family of probability distributions. However, the unknown normalizing constant of EBMs makes training particularly difficult. Our goal is to provide a friendly introduction to modern approaches for EBM training. We start by explaining maximum likelihood training with Markov chain Monte Carlo (MCMC), and proceed to elaborate on MCMC-free approaches, including Score Matching (SM) and Noise Constrastive Estimation (NCE). We highlight theoretical connections among these three approaches, and end with a brief survey on alternative training methods, which are still under active research. Our tutorial is targeted at an audience with basic understanding of generative models who want to apply EBMs or start a research project in this direction.
