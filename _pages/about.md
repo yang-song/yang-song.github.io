@@ -3,8 +3,8 @@ layout: about
 title: about
 permalink: /
 subtitle: |+
-  <strong>Researcher</strong> at <a href="https://openai.com/">OpenAI</a>, Strategic Explorations team. <br><br>
-  (Incoming) <strong>Assistant Professor</strong>, <br>
+  Leading Strategic Explorations team at <a href="https://openai.com/">OpenAI</a><br><br>
+  Incoming Assistant Professor, <br>
   Electrical Engineering and Computing + Mathematical Sciences, <br>
   <a href="https://www.caltech.edu">California Institute of Technology (Caltech)</a>.
 

@@ -16,6 +16,10 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Member of Technical Staff
+      institution: OpenAI, San Francisco, California
+      year: August 2022 —
+
     - title: Research Intern
       institution: Google Brain, Google LLC, Mountain View, California
       year: Summer 2020
