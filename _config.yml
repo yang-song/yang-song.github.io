@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Yuning Yang# the website title (if blank, full name will be used instead)
+title: Yuning Yang # the website title (if blank, full name will be used instead)
 first_name: Yuning
 middle_name: 
 last_name: Yang
@@ -11,12 +11,12 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
   The personal website of Yuning Yang.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-keywords: Yang Song, machine learning, AI, artificial intelligence  # add your own keywords or leave empty
+keywords: Yuning Yang, machine learning, AI for Health, artificial intelligence  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: caltech.ico  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://yang-song.net # the base hostname & protocol for your site
+url: https://jeremyyny.github.io/ # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -65,12 +65,12 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-email: thusongyang@gmail.com
-github_username: yang-song # your GitHub user name
+email: yuningyang@ucla.edu
+github_username: Jeremyyny # your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username: DrYangSong # your Twitter handle
-linkedin_username: yang-song-machine-learning # your LinkedIn user name
-scholar_userid: o_J2CroAAAAJ # your Google Scholar ID
+twitter_username: # your Twitter handle
+linkedin_username: yuning-yang-jeremy # your LinkedIn user name
+scholar_userid: EI-oGscAAAAJ&hl # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
@@ -90,8 +90,8 @@ contact_note: >
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
 
-google_analytics: UA-69768980-1 # your Goole Analytics measurement ID (format: G-XXXXXXXXXX)
-panelbear_analytics: 2L2SaElaomp # panelbear analytics site ID (format: XXXXXXXXX)
+google_analytics: # your Goole Analytics measurement ID (format: G-XXXXXXXXXX)
+panelbear_analytics: # panelbear analytics site ID (format: XXXXXXXXX)
 
 google_site_verification:  # your google-site-verification ID (Google Search Console)
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
@@ -100,17 +100,17 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Generative Space # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: 
-permalink: /blog/:year/:title/
+# blog_name: Generative Space # blog_name will be displayed in your blog page
+# blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
+# blog_description: 
+# permalink: /blog/:year/:title/
 
 # Pagination
 pagination:
   enabled: true
 
 # Comments
-disqus_shortname: ysong # put your disqus shortname
+disqus_shortname: jacobyhsi # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
@@ -221,8 +221,8 @@ jekyll-archives:
 
 scholar:
 
-  last_name: Song
-  first_name: [Yang]
+  last_name: Si
+  first_name: [Jacob]
 
   style: apa
   locale: en
