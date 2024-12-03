@@ -6,7 +6,7 @@ subtitle: |+
   <strong>AI Researcher</strong> at <a href="https://www.fda.gov/">FDA</a>
 
 profile:
-  image: profile.jpg
+  image: self_photo.jpeg
   image_circular: false # crops the image to make it circular
   address: false
 
