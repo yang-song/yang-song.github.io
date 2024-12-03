@@ -1,23 +1,22 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: |+
-  Leading Strategic Explorations team at <a href="https://openai.com/">OpenAI</a><br><br>
-  Incoming Assistant Professor, <br>
-  Electrical Engineering and Computing + Mathematical Sciences, <br>
-  <a href="https://www.caltech.edu">California Institute of Technology (Caltech)</a>.
+  <strong>AI Researcher</strong> at <a href="https://www.fda.gov/">FDA</a>
 
 profile:
   image: profile.jpg
-  image_cicular: false # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   address: false
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-**Research:** My goal is to build powerful AI models capable of understanding, generating and reasoning with high-dimensional data across diverse modalities. I am currently focused on developing transferable techniques to improve generative models, including their training methodologies, architecture design, alignment, robustness, evaluation techniques and inference efficiency. I am also interested in generative modeling as a tool for scientific discovery. I invented many foundational concepts and techniques in (score-based) diffusion models, for which you can find more in a [blog post](/blog/2021/score/) and a [quanta magazine article](https://www.quantamagazine.org/the-physics-principle-that-inspired-modern-ai-art-20230105/).
+I am a full-time AI researcher at [FDA](https://www.fda.gov/) advised by [Qi Liu](https://scholar.google.com/citations?user=LVO1_ZsAAAAJ&hl=en), [Hadi Kharrazi](http://hkharrazi.com/), and [David C. Fajgenbaum](https://www.med.upenn.edu/apps/faculty/index.php/g275/p8205911). I am currently working closely with [Yuzhe Yang](https://people.csail.mit.edu/yuzhe/) and [Ying Nian Wu](http://www.stat.ucla.edu/~ywu/) as well. My recent research interests are in LLM agents and multimodal model agents in Healthcare.
 
-**Previously:** I received my Ph.D. in Computer Science from [Stanford University](https://www.stanford.edu), advised by [Stefano Ermon](https://cs.stanford.edu/~ermon). I was a research intern at [Google Brain](https://research.google/teams/brain/), Uber ATG, and [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/). I obtained my Bachelor's degree in Mathematics and Physics from [Tsinghua University](https://www.tsinghua.edu.cn/), where I worked with [Jun Zhu](http://ml.cs.tsinghua.edu.cn/~jun/index.shtml), [Raquel Urtasun](http://www.cs.toronto.edu/~urtasun/), and [Richard Zemel](http://www.cs.toronto.edu/~zemel/inquiry/home.php).
+Before joining the FDA, I earned an M.Eng. in Artificial Intelligence from the [University of California, Los Angeles](https://www.ucla.edu/), and a B.Sc. in Computer Science and Quantitative Economics at the [University of California, Irvine](https://uci.edu/). I was also fortunate to be advised by [Amir M. Rahmani](https://ics.uci.edu/~amirr1/) at the [UCI HealthSciTech Group](https://healthscitech.nursing.uci.edu/), and [Guang Cheng](http://www.stat.ucla.edu/~guangcheng/2.html) at UCLA, where I researched synthetic data through deep generative modeling.
+
+If you are a student interested in research about AI for health or would like to collaborate, please email me!
