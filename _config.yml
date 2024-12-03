@@ -2,13 +2,13 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Yang Song # the website title (if blank, full name will be used instead)
-first_name: Yang
+title: Yuning Yang# the website title (if blank, full name will be used instead)
+first_name: Yuning
 middle_name: 
-last_name: Song
-email: thusongyang@gmail.com
+last_name: Yang
+email: yuningyang@ucla.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  The personal website of Yang Song.
+  The personal website of Yuning Yang.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: Yang Song, machine learning, AI, artificial intelligence  # add your own keywords or leave empty
