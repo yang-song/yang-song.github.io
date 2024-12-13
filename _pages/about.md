@@ -21,4 +21,4 @@ Before joining the FDA, I earned an M.Eng. in Artificial Intelligence from the [
 
 If you are a student interested in research about AI for health or would like to collaborate, please email me!
 
-<strong>Contact:</strong> <span style="font-family:'Lucida Console', monospace">yuningyang at ucla dot edu</span> , <span style="font-family:'Lucida Console', monospace">Yuning dot Yang at fda dot hhs dot gov</span>   
+<strong>Contact:</strong> <span style="font-family:'Lucida Console', monospace">yuningyang at ucla dot edu</span> <strong>/</strong> <span style="font-family:'Lucida Console', monospace">Yuning dot Yang at fda dot hhs dot gov</span>   
