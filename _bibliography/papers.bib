@@ -1,5 +1,28 @@
 ---
 ---
+
+@inproceedings{lu2024consistency,
+  title={Simplifying, Stabilizing and Scaling Continuous-Time Consistency Models},
+  author={Cheng Lu and Yang Song},
+  abbr={arXiv},
+  abstract={Consistency models (CMs) are a powerful class of diffusion-based generative models optimized for fast sampling. Most existing CMs are trained using discretized timesteps, which introduce additional hyperparameters and are prone to discretization errors. While continuous-time formulations can mitigate these issues, their success has been limited by training instability. To address this, we propose a simplified theoretical framework that unifies previous parameterizations of diffusion models and CMs, identifying the root causes of instability. Based on this analysis, we introduce key improvements in diffusion process parameterization, network architecture, and training objectives. These changes enable us to train continuous-time CMs at an unprecedented scale, reaching 1.5B parameters on ImageNet 512x512. Our proposed training algorithm, using only two sampling steps, achieves FID scores of 2.06 on CIFAR-10, 1.48 on ImageNet 64x64, and 1.88 on ImageNet 512x512, narrowing the gap in FID scores with the best existing diffusion models to within 10%.},
+  pdf={https://arxiv.org/abs/2410.11081},
+  year={2024},  
+  booktitle={arXiv preprint arXiv:2410.11081},
+  selected={true}
+}
+
+
+@inproceedings{zhang2024deps,
+  title={Improving Diffusion Inverse Problem Solving with Decoupled Noise Annealing},
+  author={Bingliang Zhang and Wenda Chu and Julius Berner and Chenlin Meng and Anima Anandkumar and Yang Song},
+  abbr={arXiv},
+  abstract={Diffusion models have recently achieved success in solving Bayesian inverse problems with learned data priors. Current methods build on top of the diffusion sampling process, where each denoising step makes small modifications to samples from the previous step. However, this process struggles to correct errors from earlier sampling steps, leading to worse performance in complicated nonlinear inverse problems, such as phase retrieval. To address this challenge, we propose a new method called Decoupled Annealing Posterior Sampling (DAPS) that relies on a novel noise annealing process. Specifically, we decouple consecutive steps in a diffusion sampling trajectory, allowing them to vary considerably from one another while ensuring their time-marginals anneal to the true posterior as we reduce noise levels. This approach enables the exploration of a larger solution space, improving the success rate for accurate reconstructions. We demonstrate that DAPS significantly improves sample quality and stability across multiple image restoration tasks, particularly in complicated nonlinear inverse problems. For example, we achieve a PSNR of 30.72dB on the FFHQ 256 dataset for phase retrieval, which is an improvement of 9.12dB compared to existing methods.},
+  pdf={https://arxiv.org/abs/2407.01521},
+  booktitle={arXiv preprint arXiv:2407.01521},
+  year={2024},    
+}
+
 @inproceedings{song2023consistency2,
   title={Improved Techniques for Training Consistency Models},
   author={Yang Song and Prafulla Dhariwal},
@@ -36,7 +59,6 @@
   poster={ICML2023/consistency.pdf},
   selected={true}
 }
-
 
 @article{yang2022diffusion,
   title={Diffusion Models: A Comprehensive Survey of Methods and Applications},
