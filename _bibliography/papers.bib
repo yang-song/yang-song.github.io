@@ -10,6 +10,8 @@
   year={2025},  
   honor={Oral Presentation [Top 1.8%]},
   award={Oral},
+  poster={ICLR2025/scm_poster.pdf},
+  blog={https://openai.com/index/simplifying-stabilizing-and-scaling-continuous-time-consistency-models/},
   booktitle={the 13th International Conference on Learning Representations, 2025.},
   selected={true}
 }
@@ -22,7 +24,9 @@
   abstract={Diffusion models have recently achieved success in solving Bayesian inverse problems with learned data priors. Current methods build on top of the diffusion sampling process, where each denoising step makes small modifications to samples from the previous step. However, this process struggles to correct errors from earlier sampling steps, leading to worse performance in complicated nonlinear inverse problems, such as phase retrieval. To address this challenge, we propose a new method called Decoupled Annealing Posterior Sampling (DAPS) that relies on a novel noise annealing process. Specifically, we decouple consecutive steps in a diffusion sampling trajectory, allowing them to vary considerably from one another while ensuring their time-marginals anneal to the true posterior as we reduce noise levels. This approach enables the exploration of a larger solution space, improving the success rate for accurate reconstructions. We demonstrate that DAPS significantly improves sample quality and stability across multiple image restoration tasks, particularly in complicated nonlinear inverse problems. For example, we achieve a PSNR of 30.72dB on the FFHQ 256 dataset for phase retrieval, which is an improvement of 9.12dB compared to existing methods.},
   pdf={https://arxiv.org/abs/2407.01521},
   award={Oral},
+  code={https://github.com/zhangbingliang2019/DAPS},
   honor={Oral Presentation [Top 3.3%]},
+  website={https://daps-inverse-problem.github.io/},
   booktitle={the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2025.},
   year={2025},    
 }
@@ -33,6 +37,7 @@
   abbr={ICLR},
   abstract={Consistency models are a nascent family of generative models that can sample high quality data in one step without the need for adversarial training. Current consistency models achieve optimal sample quality by distilling from pre-trained diffusion models and employing learned metrics such as LPIPS. However, distillation limits the quality of consistency models to that of the pre-trained diffusion model, and LPIPS causes undesirable bias in evaluation. To tackle these challenges, we present improved techniques for consistency training, where consistency models learn directly from data without distillation. We delve into the theory behind consistency training and identify a previously overlooked flaw, which we address by eliminating Exponential Moving Average from the teacher consistency model. To replace learned metrics like LPIPS, we adopt Pseudo-Huber losses from robust statistics. Additionally, we introduce a lognormal noise schedule for the consistency training objective, and propose to double total discretization steps every set number of training iterations. Combined with better hyperparameter tuning, these modifications enable consistency models to achieve FID scores of 2.51 and 3.25 on CIFAR-10 and ImageNet 64×64 respectively in a single sampling step. These scores mark a 3.5× and 4× improvement compared to prior consistency training approaches. Through two-step sampling, we further reduce FID scores to 2.24 and 2.77 on these two datasets, surpassing those obtained via distillation in both one-step and two-step settings, while narrowing the gap between consistency models and other state-of-the-art generative models.},
   pdf={https://arxiv.org/abs/2310.14189},
+  poster={ICLR2024/ict.pdf},
   year={2024},
   award={Oral},
 	honor={Oral Presentation [Top 1.2%]},
@@ -47,6 +52,7 @@
   abstract={Diffusion models have achieved tremendous success in generating high-dimensional data like images, videos and audio. These models provide powerful data priors that can solve linear inverse problems in zero shot through Bayesian posterior sampling. However, exact posterior sampling for diffusion models is intractable. Current solutions often hinge on approximations that are either computationally expensive or lack strong theoretical guarantees. In this work, we introduce an efficient diffusion sampling algorithm for linear inverse problems that is guaranteed to be asymptotically accurate. We reveal a link between Bayesian posterior sampling and Bayesian filtering in diffusion models, proving the former as a specific instance of the latter. Our method, termed filtering posterior sampling, leverages sequential Monte Carlo methods to solve the corresponding filtering problem. It seamlessly integrates with all Markovian diffusion samplers, requires no model re-training, and guarantees accurate samples from the Bayesian posterior as particle counts rise. Empirical tests demonstrate that our method generates better or comparable results than leading zero-shot diffusion posterior samplers on tasks like image inpainting, super-resolution, and deblurring.},
   pdf={https://openreview.net/pdf?id=tplXNcHZs1},
   year={2024},  
+  code={https://github.com/ZehaoDou-official/FPS-SMC-2023},
   booktitle={the 12th International Conference on Learning Representations, 2024.}
 }
 
@@ -127,6 +133,7 @@
 	},
 	abbr={ICLR},
 	award={Oral},
+  code={https://github.com/MinkaiXu/GeoDiff},
 	honor={Oral Presentation [Top 1.6\%]},
 	pdf={https://openreview.net/forum?id=PzcvxEMzvQC}	
 }
@@ -142,6 +149,7 @@
 	},
 	abbr={AISTATS},
 	award={Oral},
+  code={https://github.com/ermongroup/dre-infinity},
 	honor={Oral Presentation [Top 2.6%]},
 	pdf={https://arxiv.org/abs/2111.11010}
 }
