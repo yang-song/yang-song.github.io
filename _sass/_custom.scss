@@ -49,6 +49,9 @@ html[data-theme="dark"] {
   h2.year {
     color: $grey-color;
     border-top: 1px solid $grey-color;
+    /* the theme adds a border-bottom to h2; with the negative margin below it
+       would strike through the first entry's title */
+    border-bottom: none;
     padding-top: 1rem;
     margin-top: 2rem;
     margin-bottom: -2rem;
@@ -58,6 +61,13 @@ html[data-theme="dark"] {
   ol.bibliography {
     li {
       .abbr {
+        /* Compact auto-width venue pills (v1 stretches them to the full column) */
+        abbr.badge {
+          width: auto !important;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
         .award {
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
