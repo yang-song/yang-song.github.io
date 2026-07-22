@@ -104,15 +104,9 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
 
+# Analytics are intentionally disabled for this site. To enable one, add its ID here,
+# e.g. `analytics: { google: G-XXXXXXXXXX }`.
 analytics:
-  # For Google Analytics, see https://support.google.com/analytics/answer/10447272?hl=en&ref_topic=14088998&sjid=5129943941510317771-SA#zippy=%2Cgoogle-sites
-  # and follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
-  # NOTE: the old UA-69768980-1 property stopped collecting data when Google retired
-  # Universal Analytics (July 2023); create a GA4 property and put its G-XXXXXXXXXX id here.
-  google: # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
-  cronitor: # cronitor RUM analytics site ID (format: XXXXXXXXX)
-  pirsch: # your Pirsch analytics site ID (length 32 characters)
-  openpanel: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: # your google-site-verification ID (Google Search Console)

@@ -25,10 +25,17 @@ cv:
           - Academic Talent Program 2012.
 
     Experience:
+      - company: Meta Superintelligence Labs (MSL)
+        position: Research Principal
+        start_date: "2025"
+        end_date: "Present"
+        highlights: []
       - company: OpenAI, San Francisco, California
         position: Member of Technical Staff
         start_date: "2022"
-        highlights: []
+        end_date: "2025"
+        highlights:
+          - Led the strategic explorations team.
       - company: Google Brain, Google LLC, Mountain View, California
         position: Research Intern
         start_date: "2020"
