@@ -9,12 +9,14 @@ subtitle: |+
   <br><br><br>
 profile:
   image: profile.jpg
-  image_cicular: false # crops the image to make it circular
-  address: false
+  image_circular: false # crops the image to make it circular
+  more_info: false
 
-news: false # includes a list of news items
+announcements:
+  enabled: false # includes a list of news items
+
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
 
 I am the Research Principal at Meta Superintelligence Labs, working alongside Chief Scientist [Shengjia Zhao](https://scholar.google.com/citations?user=bMoauM4AAAAJ&hl=en) to shape the lab's research direction.

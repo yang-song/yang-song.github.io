@@ -1,0 +1,96 @@
+/*******************************************************************************
+ * Site-local customizations, ported from the pre-v1 fork of al-folio.
+ * Loaded after all theme partials (see assets/css/main.scss), so rules here
+ * win the cascade at equal specificity.
+ ******************************************************************************/
+
+$caltech-orange: #ff6c0c;
+$grey-color: #828282;
+
+/* Theme color: Caltech orange in both light and dark modes */
+:root {
+  --global-theme-color: #{$caltech-orange};
+  --global-hover-color: #{$caltech-orange};
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #{$caltech-orange};
+  --global-hover-color: #{$caltech-orange};
+}
+
+/* Navbar: bold brand with theme-colored hover */
+.navbar {
+  .navbar-brand {
+    font-weight: bolder;
+
+    &:hover {
+      color: var(--global-hover-color);
+    }
+  }
+}
+
+/* Social icons: left-aligned and slightly smaller (used on the about page) */
+.social {
+  text-align: left;
+
+  .contact-icons {
+    font-size: 3rem;
+  }
+
+  .contact-note {
+    text-align: left;
+    font-size: 0.8rem;
+  }
+}
+
+/* Publications */
+.publications {
+  /* Year headings on the publications page */
+  h2.year {
+    color: $grey-color;
+    border-top: 1px solid $grey-color;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+    text-align: right;
+  }
+
+  ol.bibliography {
+    li {
+      .abbr {
+        .award {
+          color: var(--global-theme-color) !important;
+          border: 1px solid var(--global-theme-color);
+          padding-left: 0.75rem;
+          padding-right: 0.75rem;
+        }
+      }
+
+      /* Compact link buttons */
+      .links {
+        a.btn {
+          padding-left: 0.35rem;
+          padding-right: 0.35rem;
+          padding-top: 0.1rem;
+          padding-bottom: 0.1rem;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      /* Orange honor line, e.g. "Oral Presentation [Top 1.8%]" */
+      .honor {
+        color: var(--global-theme-color);
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+/* Distill articles: keep captions and MathJax readable in dark mode */
+d-article {
+  figcaption,
+  mjx-container {
+    color: var(--global-text-color) !important;
+  }
+}

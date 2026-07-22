@@ -1,0 +1,8 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+github_username: yang-song # your GitHub user name
+x_username: DrYangSong # your X (Twitter) handle
+linkedin_username: yang-song-machine-learning # your LinkedIn user name
+scholar_userid: o_J2CroAAAAJ # your Google Scholar ID
+email: thusongyang@gmail.com # your email address
